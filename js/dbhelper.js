@@ -11,8 +11,8 @@ class DBHelper {
           /***** Switch comments in code to run page on local servel OR on github *****/
           // navigator.serviceWorker.register('/sw.js', {
           //     scope: '/'
-          navigator.serviceWorker.register('/restaurant-reviews-app-stage-1/sw.js', {
-              scope: '/restaurant-reviews-app-stage-1/'
+          navigator.serviceWorker.register('./sw.js', {
+              scope: '/'
           }).then(function(reg) {
               console.log("Service Worker Registered with scope: ", reg.scope);
           }).catch(function(err) {
